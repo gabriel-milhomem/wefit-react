@@ -1,13 +1,13 @@
-import { useContext, useState } from "react";
-import Cart from "../../@types/Cart";
-import CartContext from "../context/CartContext";
+import { useContext, useState } from 'react'
+import Cart from '../../@types/Cart'
+import CartContext from '../context/CartContext'
 
 interface CartContextProviderProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export function CartContextProvider({ children }: CartContextProviderProps) {
-  const [cartState, setCartState] = useState<Cart>({ items: [] });
+  const [cartState, setCartState] = useState<Cart>({ items: [] })
 
   function addToCart() {}
 
@@ -32,10 +32,10 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     >
       {children}
     </CartContext.Provider>
-  );
+  )
 }
 
 export function useCart() {
-  const context = useContext(CartContext);
-  return context;
+  const context = useContext(CartContext)
+  return context
 }

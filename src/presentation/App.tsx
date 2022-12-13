@@ -1,5 +1,5 @@
-import { CartContextProvider } from "./hooks/useCart";
-import { Router } from "./router";
+import { CartContextProvider } from './hooks/useCart'
+import { Router } from './router'
 
 export function App() {
   return (
@@ -8,5 +8,5 @@ export function App() {
         <Router />
       </CartContextProvider>
     </div>
-  );
+  )
 }
