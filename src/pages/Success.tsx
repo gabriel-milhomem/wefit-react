@@ -3,5 +3,5 @@ export function Success() {
     <div>
       <h1>Success</h1>
     </div>
-  );
+  )
 }

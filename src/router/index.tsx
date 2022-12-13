@@ -1,6 +1,6 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home, Cart, Success } from "../pages";
-import { AppRoutes } from "./routes";
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Home, Cart, Success } from '../pages'
+import { AppRoutes } from './routes'
 
 export function Router() {
   const router = createBrowserRouter([
@@ -16,7 +16,7 @@ export function Router() {
       path: AppRoutes.SUCCESS,
       element: <Success />,
     },
-  ]);
+  ])
 
-  return <RouterProvider router={router} />;
+  return <RouterProvider router={router} />
 }

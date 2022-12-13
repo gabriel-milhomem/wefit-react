@@ -1,9 +1,9 @@
-import { Router } from "./router";
+import { Router } from './router'
 
 export function App() {
   return (
     <>
       <Router />
     </>
-  );
+  )
 }
