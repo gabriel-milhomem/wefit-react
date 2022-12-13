@@ -1,4 +1,4 @@
-# WeFit
+# edit
 
 Faça o clone do projeto e depois execute o seguinte comando no terminal, para instalar as dependências:
 
