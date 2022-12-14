@@ -11,6 +11,9 @@ export const StyledMovieCard = styled.li`
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem;
+  @media (max-width: 380px) {
+    max-width: calc(100vw - 32px);
+  }
 `
 
 export const MovieImage = styled.figure`
