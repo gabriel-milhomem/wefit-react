@@ -1,11 +1,18 @@
 import { useNavigate } from 'react-router-dom'
 import shallow from 'zustand/shallow'
-import { Alert, Button, ProductItem } from '../../components'
+import {
+  Alert,
+  Button,
+  ProductItemMobile,
+  ProductItemDesktop,
+} from '../../components'
 import { CartStore, useCartStore } from '../../store'
 import { formatCurrency } from '../../util/formatCurrency'
+import { useMediaQuery } from 'usehooks-ts'
 import {
   CartContainer,
   CartFooter,
+  CartHeader,
   CartTotal,
   Label,
   Divider,
@@ -17,6 +24,7 @@ const selectCartState = (state: CartStore) =>
 
 export function Cart() {
   const navigate = useNavigate()
+  const matches = useMediaQuery('(min-width: 650px)')
   const [totalValue, products, resetCart] = useCartStore(
     selectCartState,
     shallow,
@@ -28,13 +36,26 @@ export function Cart() {
 
   return (
     <CartContainer>
+      {matches && (
+        <CartHeader>
+          <Label> PRODUTO </Label>
+          <Label />
+          <Label> QTD </Label>
+          <Label> SUBTOTAL</Label>
+          <Label />
+        </CartHeader>
+      )}
       <ProductList>
         {products
           .filter((product) => product.quantity > 0)
           .sort((a, b) => a.title.localeCompare(b.title))
-          .map((product) => (
-            <ProductItem product={product} key={product.id} />
-          ))}
+          .map((product) =>
+            matches ? (
+              <ProductItemDesktop product={product} key={product.id} />
+            ) : (
+              <ProductItemMobile product={product} key={product.id} />
+            ),
+          )}
       </ProductList>
       <Divider />
       <CartFooter>

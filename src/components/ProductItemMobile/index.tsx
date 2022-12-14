@@ -16,14 +16,14 @@ import { CartStore, useCartStore } from '../../store'
 import shallow from 'zustand/shallow'
 import { formatCurrency } from '../../util/formatCurrency'
 
-interface ProductItemProps {
+interface ProductItemMobileProps {
   product: Product
 }
 
 const selectProductActions = (state: CartStore) =>
   [state.increment, state.decrement, state.removeFromCart] as const
 
-export function ProductItem({ product }: ProductItemProps) {
+export function ProductItemMobile({ product }: ProductItemMobileProps) {
   const { title, price, quantity, image, id, subtotal } = product
   const [increment, decrement, removeFromCart] = useCartStore(
     selectProductActions,

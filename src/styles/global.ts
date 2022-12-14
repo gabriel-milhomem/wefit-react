@@ -44,7 +44,7 @@ export default createGlobalStyle`
     background: transparent;
   }
   
-  button {
+  button, svg {
     cursor: pointer;
   }
 `

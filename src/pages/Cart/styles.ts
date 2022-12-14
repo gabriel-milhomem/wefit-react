@@ -9,7 +9,7 @@ export const CartContainer = styled.section`
   flex-direction: column;
   margin: 0 auto;
   padding: 2.4rem;
-  gap: 2rem;
+  gap: 2.1rem;
   @media (max-width: 500px) {
     padding: 1.6rem;
     flex-grow: 1;
@@ -51,6 +51,14 @@ export const Label = styled.p`
   font-size: 1.4rem;
   color: ${(props) => props.theme.grey};
   text-transform: uppercase;
+`
+
+export const CartHeader = styled.header`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 8.9rem 1fr 11.5rem 1fr 1.4rem;
+  align-items: center;
+  grid-gap: 5.2rem;
 `
 
 export const CartFooter = styled.footer`

@@ -55,8 +55,6 @@ export const ProductLabel = styled.p`
 `
 
 export const ProductQuantity = styled.div`
-  font-weight: 400;
-  display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +65,7 @@ export const ProductQuantity = styled.div`
     font-size: 1.4rem;
     font-weight: 400;
     padding-left: 1.2rem;
-    margin: 0 1.25rem;
+    margin: 0 1.1rem;
     width: 6rem;
     height: 2.6rem;
   }
