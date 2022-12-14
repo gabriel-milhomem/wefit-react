@@ -27,6 +27,12 @@ export default createGlobalStyle`
     list-style: none;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   img {
     width: 100%;
     height: 100%;

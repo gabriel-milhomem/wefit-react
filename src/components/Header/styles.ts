@@ -11,6 +11,10 @@ export const HeaderContainer = styled.header`
 export const Brand = styled.h1`
   font-size: 2rem;
   color: ${(props) => props.theme.white};
+  &:hover {
+    filter: brightness(0.9);
+  }
+  transition: filter 0.2s;
 `
 
 export const MyCartButton = styled.button`
@@ -24,7 +28,7 @@ export const MyCartButton = styled.button`
   transition: filter 0.2s;
 `
 
-export const MyCartText = styled.h2`
+export const MyCartText = styled.h3`
   font-size: 1.4rem;
   font-weight: 600;
   color: ${(props) => props.theme.white};
