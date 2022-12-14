@@ -37,8 +37,8 @@ export function Alert({ alertType }: AlertProps) {
         </Figure>
         {alertType === 'empty' && <Divider />}
       </div>
-      <Button width="18rem" onClick={() => navigate('/')}>
-        <span>Voltar</span>
+      <Button width="18rem" fontSize="1.4rem" onClick={() => navigate('/')}>
+        Voltar
       </Button>
     </AlertContainer>
   )

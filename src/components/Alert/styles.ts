@@ -17,22 +17,6 @@ export const AlertContainer = styled.section`
   gap: 3.6rem;
 `
 
-export const Figure = styled.figure<FigureProps>`
-  margin: 0 auto;
-  ${(props) =>
-    props.alertType === 'empty'
-      ? css`
-          width: 17.8rem;
-          height: 26.4rem;
-          position: relative;
-          left: 1rem;
-        `
-      : css`
-          width: 29.5rem;
-          height: 30.7rem;
-        `}
-`
-
 export const Title = styled.h2`
   font-size: 2rem;
   line-height: 2.7rem;
@@ -49,5 +33,21 @@ export const Divider = styled.div`
   min-width: 44.7rem;
   width: 100%;
   height: 1.3px;
-  background-color: ${(props) => props.theme.background};
+  background-color: ${(props) => props.theme.primary};
+`
+
+export const Figure = styled.figure<FigureProps>`
+  margin: 0 auto;
+  ${(props) =>
+    props.alertType === 'empty'
+      ? css`
+          width: 17.8rem;
+          height: 26.4rem;
+          position: relative;
+          left: 1rem;
+        `
+      : css`
+          width: 29.5rem;
+          height: 30.7rem;
+        `}
 `

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 interface StyledButtonProps {
-  width: number | string
+  width: string
+  fontSize: string
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
@@ -10,7 +11,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
   justify-content: center;
   background-color: ${(props) => props.theme.blue};
-  font-size: 1.2rem;
+  font-size: ${(props) => props.fontSize};
   color: ${(props) => props.theme.white};
   border-radius: 4px;
   padding: 0 1.6rem;

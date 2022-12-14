@@ -12,12 +12,12 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.background};
-    color: ${(props) => props.theme.text};
+    background: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.primary};
     -webkit-font-smoothing: antialiased;
   }
 
-  body, button {
+  body, button, input {
     font-weight: 700;
     font-family: 'Open Sans';
   }
@@ -38,12 +38,13 @@ export default createGlobalStyle`
     height: 100%;
   }
 
-  button {
+  button, input {
     border: 0;
     color: inherit;
     background: transparent;
-    border: none;
-    padding: 0;
+  }
+  
+  button {
     cursor: pointer;
   }
 `

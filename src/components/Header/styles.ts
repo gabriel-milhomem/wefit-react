@@ -4,8 +4,11 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 1.6rem;
-  margin-bottom: 4rem;
+  padding: 0 1.6rem;
+  margin-bottom: 4.4rem;
+  @media (max-width: 500px) {
+    margin-bottom: 2rem;
+  }
 `
 
 export const Brand = styled.h1`
@@ -32,7 +35,7 @@ export const MyCartText = styled.h3`
   font-size: 1.4rem;
   font-weight: 600;
   color: ${(props) => props.theme.white};
-  @media (max-width: 30em) {
+  @media (max-width: 500px) {
     display: none;
   }
 `

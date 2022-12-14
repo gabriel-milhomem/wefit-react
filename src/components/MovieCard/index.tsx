@@ -1,6 +1,6 @@
 import {
   MovieQuantity,
-  Card,
+  StyledMovieCard,
   MovieImage,
   MovieName,
   MoviePrice,
@@ -11,7 +11,7 @@ import { ReactComponent as ShoppingCartIcon } from '../../assets/shopping-cart.s
 
 export function MovieCard() {
   return (
-    <Card>
+    <StyledMovieCard>
       <MovieImage>
         <img
           src="https://www.imagemhost.com.br/images/2022/07/10/viuva-negra.png"
@@ -26,6 +26,6 @@ export function MovieCard() {
         <MovieQuantity> 0 </MovieQuantity>
         <p> ADICIONAR AO CARRINHO</p>
       </Button>
-    </Card>
+    </StyledMovieCard>
   )
 }

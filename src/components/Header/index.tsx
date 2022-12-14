@@ -24,7 +24,7 @@ export function Header() {
             <span> 0 </span> itens
           </ItemCounter>
         </div>
-        <CartIcon />
+        <CartIcon title="Meu carrinho" />
       </MyCartButton>
     </HeaderContainer>
   )

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Card = styled.li`
+export const StyledMovieCard = styled.li`
   max-width: 30.5rem;
   width: calc(100vw - 32px);
   height: 30.9rem;
@@ -21,12 +21,11 @@ export const MovieImage = styled.figure`
 export const MovieName = styled.h2`
   margin-bottom: -0.4rem;
   font-size: 1.2rem;
-  color: ${(props) => props.theme.lightText};
+  color: ${(props) => props.theme.lightPrimary};
 `
 
 export const MoviePrice = styled.span`
   font-size: 1.6rem;
-  color: ${(props) => props.theme.text};
 `
 
 export const AddMovieButton = styled.button`
