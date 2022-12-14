@@ -1,11 +1,11 @@
 import { AxiosPromise } from 'axios'
-import { MoviesApiResponse } from '../../@types'
+import { MoviesApi } from '../../@types'
 import { http } from '..'
 
 interface MovieHttpRepository {
-  list: () => AxiosPromise<MoviesApiResponse>
+  getAll: () => AxiosPromise<MoviesApi>
 }
 
-export const MovieHttpService: MovieHttpRepository = {
-  list: () => http.get(`/products`),
+export const MovieService: MovieHttpRepository = {
+  getAll: () => http.get(`/movies`),
 }

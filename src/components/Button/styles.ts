@@ -3,6 +3,7 @@ import styled from 'styled-components'
 interface StyledButtonProps {
   width: string
   fontSize: string
+  active: boolean
 }
 
 export const StyledButton = styled.button<StyledButtonProps>`
@@ -10,7 +11,8 @@ export const StyledButton = styled.button<StyledButtonProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.theme.blue};
+  background-color: ${({ theme, active }) =>
+    active ? theme.green : theme.blue};
   font-size: ${(props) => props.fontSize};
   color: ${(props) => props.theme.white};
   border-radius: 4px;

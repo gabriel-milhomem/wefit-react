@@ -5,6 +5,4 @@ export interface Movie {
   image: string
 }
 
-export interface MoviesApiResponse {
-  movies: Movie[]
-}
+export type MoviesApi = Movie[]

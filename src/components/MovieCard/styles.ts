@@ -21,7 +21,7 @@ export const MovieImage = styled.figure`
   height: 18.8rem;
 `
 
-export const MovieName = styled.h2`
+export const MovieTitle = styled.h2`
   margin-bottom: -0.4rem;
   font-size: 1.2rem;
   color: ${(props) => props.theme.lightPrimary};

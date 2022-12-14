@@ -37,7 +37,7 @@ export const ProductImage = styled.figure`
   height: 100%;
 `
 
-export const ProductName = styled.h2`
+export const ProductTitle = styled.h2`
   font-size: 1.4rem;
   line-height: 2rem;
 `

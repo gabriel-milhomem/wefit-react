@@ -5,7 +5,9 @@ export interface Product extends Movie {
   subtotal: number
 }
 
-export interface Cart {
-  items: Product[]
-  total: number
+export interface CartState {
+  products: Product[]
+  loadingInit: boolean
+  totalQuantity: number
+  totalValue: number
 }
